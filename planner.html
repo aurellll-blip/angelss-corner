@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planner & Goals | Angel's Corner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">ANGEL'S CORNER 🎀</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="girlhood.html">Girlhood & Beauty</a>
+      <a href="planner.html" class="active">Planner & Goals</a>
+      <a href="confessions.html">Confessions</a>
+      <button class="theme-btn" onclick="cycleTheme()">Ganti Tema ✨</button>
+    </nav>
+  </header>
+
+  <div class="banner">ANGEL'S DAILY PLANNER, HABITS & GLOW UP GOALS</div>
+
+  <div class="container" style="grid-template-columns: 1fr;">
+    <div class="card">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+        <h2 style="margin: 0;">📅 Daily Schedule & Planner</h2>
+        <input type="text" placeholder="Tanggal hari ini..." style="border: none; border-bottom: 1px dashed var(--accent-pink); background: transparent; font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: var(--deep-rose); outline: none; width: 150px; text-align: right;">
+      </div>
+      <p style="font-size: 0.85rem; margin-bottom: 15px; color: var(--text-color);">Tulis jadwal kegiatan, to-do list, atau catatan pentingmu hari ini:</p>
+      
+      <textarea class="planner-textarea" rows="7" placeholder="1. Bangun pagi & skincare routine...
+2. Belajar / Beraktivitas...
+3. Me time & baca buku..."></textarea>
+    </div>
+
+    <div class="card">
+      <h2>✨ Daily Habit Tracker</h2>
+      <p style="font-size:0.85rem; margin-bottom:15px; color: var(--text-color);">Centang kebiasaan baik yang sudah kamu lakukan hari ini!</p>
+      
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <label><input type="checkbox"> 💧 Minum air 2 liter</label>
+        <label><input type="checkbox"> 🍎 Tidur cukup (7-8 jam)</label>
+        <label><input type="checkbox"> 🧴 Skincare pagi & malam</label>
+        <label><input type="checkbox"> 📚 Membaca buku / belajar 30 menit</label>
+        <label><input type="checkbox"> 🩰 Olahraga / stretching ringan</label>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

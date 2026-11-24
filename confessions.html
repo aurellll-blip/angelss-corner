@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confessions | Angel's Corner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">ANGEL'S CORNER 🎀</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="girlhood.html">Girlhood & Beauty</a>
+      <a href="planner.html">Planner & Goals</a>
+      <a href="confessions.html" class="active">Confessions</a>
+      <button class="theme-btn" onclick="cycleTheme()">Ganti Tema ✨</button>
+    </nav>
+  </header>
+
+  <div class="banner">SECRET DIARY & CONFESSIONS (LOCAL STORAGE)</div>
+
+  <div class="container" style="grid-template-columns: 1fr;">
+    <div class="card">
+      <h2>Tulis Rahasia atau Catatanmu Hari Ini 💌</h2>
+      <p style="font-size:0.85rem; margin-bottom:10px;">Catatan disimpan secara pribadi di browser perangkatmu. Klik kotak catatan di bawah untuk membaca selengkapnya.</p>
+      <textarea id="noteInput" rows="3" class="planner-textarea" placeholder="Tulis cerita atau wishlist-mu di sini..."></textarea>
+      <button class="btn-pink" onclick="saveNote()">Simpan Catatan 🎀</button>
+    </div>
+
+    <!-- Wadah Kotak-Kotak Kecil -->
+    <div id="notesList" class="notes-grid"></div>
+  </div>
+
+  <!-- Pop-up Modal untuk Membaca Catatan Lengkap -->
+  <div id="noteReadModal" class="modal" onclick="closeNoteModal(event)">
+    <div class="modal-content">
+      <small id="modalNoteDate" style="color: var(--deep-rose); font-weight: 500;"></small>
+      <p id="modalNoteFullText" style="margin: 15px 0; white-space: pre-wrap; line-height: 1.6; max-height: 300px; overflow-y: auto;"></p>
+      <div style="text-align: right;">
+        <button class="btn-pink" onclick="document.getElementById('noteReadModal').style.display='none'">Tutup 🎀</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

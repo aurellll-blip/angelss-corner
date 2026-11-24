@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Girlhood & Beauty | Angel's Corner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">ANGEL'S CORNER 🎀</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="girlhood.html" class="active">Girlhood & Beauty</a>
+      <a href="planner.html">Planner & Goals</a>
+      <a href="confessions.html">Confessions</a>
+      <button class="theme-btn" onclick="cycleTheme()">Ganti Tema ✨</button>
+    </nav>
+  </header>
+
+  <div class="banner">BEAUTY SECRETS & GLOW-UP RITUALS</div>
+
+  <div class="container" style="grid-template-columns: 1fr;">
+    <div class="card" style="text-align: center;">
+      <h2>🪞 Vintage Pocket Mirror</h2>
+      <p style="font-size: 0.9rem; margin-bottom: 15px;">Make yourself feel like an angel today. 🤍</p>
+
+      <div id="mirrorFrame" class="mirror-box">
+        <video id="mirrorVideo" autoplay playsinline></video>
+        <p id="mirrorPlaceholder">Klik tombol di bawah untuk menyalakan cermin ✨</p>
+        <img src="mirror-frame.png" alt="Vintage Frame" class="frame-overlay">
+      </div>
+
+      <div style="margin-top: 15px;">
+        <button class="btn-pink" id="toggleMirrorBtn" onclick="toggleMirror()">Buka Cermin 🪞</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>✨ 5 Daily Rules untuk Clean Girl & Angel Look</h2>
+      <p style="font-size:0.85rem; margin-bottom:15px;"><small>Diposting oleh Admin • Kategori: Tips & Beauty</small></p>
+      
+      <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 0.95rem;">
+        <li style="padding: 10px 14px; background: var(--bg-primary); border-radius: 12px; border: 1px solid var(--accent-pink);">
+          <strong>1. Tidur 7-9 jam konsisten</strong> — Kunci utama kulit segar dan terhindar dari mata panda.
+        </li>
+        <li style="padding: 10px 14px; background: var(--bg-primary); border-radius: 12px; border: 1px solid var(--accent-pink);">
+          <strong>2. Kurangi gula</strong> — Mencegah glikasi kulit agar elastisitas kolagen tetap terjaga.
+        </li>
+        <li style="padding: 10px 14px; background: var(--bg-primary); border-radius: 12px; border: 1px solid var(--accent-pink);">
+          <strong>3. Protein cukup</strong> — Nutrisi penting agar helai rambut lebih kuat dan berkilau.
+        </li>
+        <li style="padding: 10px 14px; background: var(--bg-primary); border-radius: 12px; border: 1px solid var(--accent-pink);">
+          <strong>4. Postur tegak</strong> — Latih postur tubuh agar tegap dan anggun.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

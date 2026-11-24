@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angel's Corner 🎀</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ID PASS -->
+  <section class="id-pass-section">
+    <div class="id-pass-container">
+      <div class="id-card-frame">
+        <div class="card-header-title">PERMANENT LICENSE OF TRAVEL</div>
+        <div class="id-card-content">
+          <div class="id-photo-section">
+            <label for="uploadPhoto" class="photo-dropzone" id="photoLabel">
+              <span style="font-size: 0.8rem; text-align: center; color: #7f5539;">+ Upload Foto 📷</span>
+            </label>
+            <input type="file" id="uploadPhoto" accept="image/*" style="display: none;" onchange="previewImage(event)">
+            <span class="photo-caption">Photograph of Authorized traveler</span>
+          </div>
+          <div class="id-info-section">
+            <div class="id-field">
+              <label>Issued to (Nama):</label>
+              <input type="text" id="inputName" placeholder="Ketik nama kamu...">
+            </div>
+            <div class="id-field">
+              <label>Date of birth (Birthday):</label>
+              <input type="text" id="inputDob" placeholder="DD / MM / YYYY">
+            </div>
+            <div class="id-field">
+              <label>Hobby / Traits (Hobi):</label>
+              <input type="text" id="inputHobby" placeholder="Tulis hobimu...">
+            </div>
+            <div class="id-field">
+              <label>Date of issue:</label>
+              <input type="text" id="inputDate" value="2026" readonly>
+            </div>
+            <div class="id-stamp">ANGEL'S PASS</div>
+          </div>
+        </div>
+        <div class="id-footer-sig">
+          <input type="text" id="inputSig" placeholder="Tanda tangan (ketik nama)...">
+          <span>Signature of Authorized traveler</span>
+        </div>
+      </div>
+      <button class="btn-pink" style="margin-top: 20px; font-size: 0.95rem; padding: 10px 25px;" onclick="scrollToContent()">
+        Masuk ke Blog ✨
+      </button>
+    </div>
+  </section>
+
+  <!-- HALAMAN UTAMA -->
+  <div id="mainContent">
+    <header>
+      <div class="logo">ANGEL'S CORNER 🎀</div>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="girlhood.html">Girlhood & Beauty</a>
+        <a href="planner.html">Planner & Goals</a>
+        <a href="confessions.html">Confessions</a>
+        <button class="theme-btn" onclick="cycleTheme()">Ganti Tema ✨</button>
+      </nav>
+    </header>
+
+    <div class="banner">WELCOME TO MY COQUETTE ANGELIC UNIVERSE 🤍</div>
+
+    <div class="container">
+      <div class="card">
+        <h2>🎀 Welcome to My Corner</h2>
+        <p>Website estetik bernuansa pink dan coquette style. Jelajahi menu di atas untuk melihat tips kecantikan dan planner harian.</p>
+      </div>
+
+      <div class="card">
+        <h2>✨ Featured Updates</h2>
+        <p>Cek halaman <strong>Girlhood & Beauty</strong> untuk mencoba cermin digital vintage dan tips glow-up harian.</p>
+      </div>
+
+      <!-- KORAN ESTETIK -->
+      <div class="newspaper-card" style="width: 100%; max-width: 100%; margin: 10px 0;">
+        <div class="ns-header">
+          <span class="ns-sub">Special Edition</span>
+          <h1 class="ns-title">Daily Times</h1>
+          <div class="ns-subtitle">JUST BEING ME</div>
+        </div>
+
+        <div class="ns-row top-row">
+          <div class="ns-text-box">
+            <input type="text" class="ns-input-title" placeholder="Ketik judul berita 1 di sini...">
+            <textarea class="ns-input-body" rows="6" placeholder="Ketik cerita atau kata-kata kamu di bagian ini..."></textarea>
+          </div>
+          <div class="ns-img-box">
+            <label for="newsPhoto1" class="ns-photo-label" id="labelPhoto1">
+              <span>+ Foto 1 📷</span>
+            </label>
+            <input type="file" id="newsPhoto1" accept="image/*" style="display: none;" onchange="previewNewsPhoto(event, 'labelPhoto1')">
+            <div class="ns-bow">🎀</div>
+          </div>
+        </div>
+
+        <div class="ns-row bottom-row">
+          <div class="ns-img-box">
+            <label for="newsPhoto2" class="ns-photo-label" id="labelPhoto2">
+              <span>+ Foto 2 📷</span>
+            </label>
+            <input type="file" id="newsPhoto2" accept="image/*" style="display: none;" onchange="previewNewsPhoto(event, 'labelPhoto2')">
+            <div class="ns-hearts">💕</div>
+          </div>
+          <div class="ns-text-box">
+            <input type="text" class="ns-input-title" placeholder="Ketik judul berita 2 di sini...">
+            <textarea class="ns-input-body" rows="6" placeholder="Ketik cerita atau kutipan kedua di bagian ini..."></textarea>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
